@@ -18,3 +18,15 @@ sudo mount -t cifs -o username=kent,uid=1000,gid=1000 //192.168.86.147/Movies/MK
 
 That mounted the MKV folder in the NAS to the MKV folder under my username account in Linux.
 
+# IP address
+
+to find the IP address of the machine you are on use the command: ifconfig
+
+# Mount Drive
+
+Related to the above you may also need to install the tools related to cifs. Use command: sudo apt-get install cifs-utils
+
+If you want the drive to always show up whenever the machine is booted you can add the information to the fstab file.
+
+Then to mount everything in the fstab file you use the command: sudo mount -a
+
